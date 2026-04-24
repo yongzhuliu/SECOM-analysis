@@ -1,0 +1,6 @@
+﻿list_name,entity,n_items,match_in_train,match_in_monitor
+main_signal,feature,40,40,40
+auxiliary_diagnostic,feature,20,20,20
+auxiliary_diagnostic,pair_feature_a,10,10,10
+auxiliary_diagnostic,pair_feature_b,10,10,10
+final_deployment,feature,10,10,10

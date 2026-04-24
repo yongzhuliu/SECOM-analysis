@@ -1,0 +1,75 @@
+{
+  "DETAIL_CSV_PATH": "outputs/training\\all_model_evaluation_detail.csv",
+  "ARTIFACT_PATH": "models\\all_best_models_and_thresholds.joblib",
+  "TOP_K_MODELS": 10,
+  "BACKGROUND_SIZE": 60,
+  "POOLED_BACKGROUND_SIZE": 80,
+  "MAX_EXPLAIN_ROWS_PER_GROUP": 80,
+  "MAX_EVALS_CAP": 500,
+  "TOP_N_PER_MODEL_FOR_STABILITY": 10,
+  "CORR_THRESHOLD": 0.9,
+  "HIGH_CORR_COMPANION_THRESHOLD": 0.95,
+  "OOF_N_SPLITS": 5,
+  "MIN_FP_EVIDENCE_ROWS": 15,
+  "PAIR_TOP_FEATURES": 15,
+  "PAIR_MIN_SUPPORT": 10,
+  "PAIR_MIN_LIFT": 2.0,
+  "SPLIT_VALIDATION_TOP_FEATURES": 20,
+  "SPLIT_VALIDATION_MIN_SCORE": 0.5,
+  "SPLIT_VALIDATION_MIN_PASS_RATE": 0.5,
+  "PRIORITY_TP_FP_RATIO_MIN": 1.5,
+  "PRIORITY_TOP_N": 8,
+  "NORMAL_HIGH_QUANTILE": 0.99,
+  "NORMAL_LOW_QUANTILE": 0.01,
+  "TRAIN_CSV_MAP": {
+    "Base": "data/processed\\X_train_base.csv",
+    "RFERF": "data/processed\\X_train_rferf.csv",
+    "RFEXGB": "data/processed\\X_train_rfexgb.csv",
+    "ANOVA": "data/processed\\X_train_anova.csv"
+  },
+  "TEST_CSV_MAP": {
+    "Base": "X_test_base.csv",
+    "RFERF": "X_test_rferf.csv",
+    "RFEXGB": "X_test_rfexgb.csv",
+    "ANOVA": "X_test_anova.csv"
+  },
+  "LABEL_CSV_CANDIDATES": {
+    "Base": [
+      "data/processed\\y_train_base.csv",
+      "data/processed\\y_train.csv"
+    ],
+    "RFERF": [
+      "data/processed\\y_train_rferf.csv",
+      "data/processed\\y_train.csv"
+    ],
+    "RFEXGB": [
+      "data/processed\\y_train_rfexgb.csv",
+      "data/processed\\y_train.csv"
+    ],
+    "ANOVA": [
+      "data/processed\\y_train_anova.csv",
+      "data/processed\\y_train.csv"
+    ]
+  },
+  "TEST_LABEL_CSV_CANDIDATES": {
+    "Base": [
+      "y_test_base.csv",
+      "y_test.csv"
+    ],
+    "RFERF": [
+      "y_test_rferf.csv",
+      "y_test.csv"
+    ],
+    "RFEXGB": [
+      "y_test_rfexgb.csv",
+      "y_test.csv"
+    ],
+    "ANOVA": [
+      "y_test_anova.csv",
+      "y_test.csv"
+    ]
+  },
+  "RAW_TRAIN_CSV_PATH": "X_train.csv",
+  "RAW_TEST_CSV_PATH": "X_test.csv",
+  "OUTPUT_TOP_N": 10
+}

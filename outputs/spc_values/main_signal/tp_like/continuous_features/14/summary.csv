@@ -1,0 +1,2 @@
+﻿feature,resolved_train_feature,resolved_monitor_feature,n_baseline,n_monitor,center_mean,sigma_train,normal_p01,normal_p99,n_beyond_3sigma,n_ewma_alarm,n_cusum_alarm,list_category,list_subtype,export_rank,appeared_in_topn_models,avg_rank,best_rank,avg_mean_positive_shap,max_mean_positive_shap,feature_set,model
+14,14,14,1167,314,9.009556041131106,2.757414778793942,3.040294,15.95407,2,0,0,main_signal,tp_like,10,10.0,28.5,6.0,0.071391940359565,0.1748732755970871,"ANOVA,Base,RFERF,RFEXGB","LR,RF,SVM"

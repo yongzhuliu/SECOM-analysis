@@ -1,0 +1,5 @@
+﻿category,subtype,n_rows_in_list,n_continuous_features_exported,n_missingness_features_exported,n_interaction_pairs_exported,n_unresolved_items,n_multivariate_unresolved_items
+main_signal,fp_like,10,10,10,0,0,0
+main_signal,split_stable,10,10,10,0,0,0
+main_signal,test_holdout,10,10,10,0,0,0
+main_signal,tp_like,10,10,10,0,0,0

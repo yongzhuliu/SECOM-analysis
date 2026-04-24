@@ -1,0 +1,4 @@
+﻿category,subtype,n_rows_in_list,n_continuous_features_exported,n_missingness_features_exported,n_interaction_pairs_exported,n_unresolved_items,n_multivariate_unresolved_items
+auxiliary_diagnostic,distribution_separation,10,10,10,0,0,0
+auxiliary_diagnostic,interaction,10,0,0,10,0,0
+auxiliary_diagnostic,missingness,10,10,10,0,0,0

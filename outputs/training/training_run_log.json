@@ -1,0 +1,13 @@
+{
+  "processed_dir": "data\\processed",
+  "output_dir": "outputs\\training",
+  "model_dir": "models",
+  "pipeline_cache_dir": "pipeline_cache",
+  "random_state": 666,
+  "n_splits": 5,
+  "n_iter_supervised": 25,
+  "n_iter_anomaly": 12,
+  "n_iter_voting": 30,
+  "search_n_jobs": 15,
+  "total_elapsed": "24m 29.2s"
+}

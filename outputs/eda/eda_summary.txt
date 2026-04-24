@@ -1,0 +1,35 @@
+SECOM EDA Summary
+=================
+
+Data source:
+- UCI Machine Learning Repository
+- Semiconductor manufacturing process data
+
+Dataset shape:
+- Samples: 1567
+- Total columns: 592
+- Numeric features used for EDA, excluding Time and Pass/Fail: 590
+
+High-dimensional data:
+- Feature-to-sample ratio: 0.377
+- This indicates that the dataset contains many sensor/process variables relative to the number of observations.
+
+Class imbalance:
+- Pass: 1463 samples (93.36%)
+- Fail: 104 samples (6.64%)
+- Pass-to-fail ratio: 14.07:1
+
+Missing values:
+- Overall missing rate: 4.54%
+- Number of features with missing rate > 1%: 103
+- Number of features with missing rate > 5%: 52
+- Number of features with missing rate > 40%: 32
+
+Low-information features:
+- Number of exact zero-variance features: 116
+- Number of features with variance <= 1e-6: 128
+- Number of features with variance <= 1e-4: 173
+
+Generated outputs:
+- CSV summary files
+- EDA charts saved as PNG files

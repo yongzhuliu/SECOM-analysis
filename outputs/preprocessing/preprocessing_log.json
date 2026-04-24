@@ -1,0 +1,118 @@
+{
+  "input_path": "data\\raw\\uci-secom.csv",
+  "test_size": 0.2,
+  "random_state": 666,
+  "missing_threshold": 0.4,
+  "near_constant_tol": 0.99,
+  "corr_threshold": 0.9,
+  "anova_k": 50,
+  "cv_folds": 5,
+  "knn_neighbors": 10,
+  "steps": [
+    {
+      "step": "drop_time",
+      "dropped": [
+        "Time"
+      ]
+    },
+    {
+      "step": "drop_duplicated_features",
+      "n_dropped": 104,
+      "n_remaining": 486
+    },
+    {
+      "step": "drop_high_missing_features_and_add_na_indicators",
+      "n_high_missing_features_dropped": 32,
+      "n_na_indicators_added": 6,
+      "n_remaining": 460
+    },
+    {
+      "step": "variance_threshold_zero",
+      "n_dropped": 12,
+      "n_remaining": 448
+    },
+    {
+      "step": "drop_near_constant_features",
+      "threshold": 0.99,
+      "n_dropped": 6,
+      "n_remaining": 442
+    },
+    {
+      "step": "standardize",
+      "n_scaled_features": 436,
+      "n_unscaled_na_indicators": 6
+    },
+    {
+      "step": "knn_imputation",
+      "n_features": 442
+    },
+    {
+      "step": "smart_correlated_selection",
+      "threshold": 0.9,
+      "n_dropped": 186,
+      "n_remaining": 256
+    },
+    {
+      "step": "rf_rfe",
+      "selected_n_features": 123,
+      "choice": {
+        "best_score": 0.28821510679865137,
+        "best_std": 0.09330117843370153,
+        "best_n_features": 220,
+        "threshold": 0.27778371793072165,
+        "chosen_n_features": 123,
+        "chosen_score": 0.28604169341031616
+      }
+    },
+    {
+      "step": "xgb_rfe",
+      "selected_n_features": 35,
+      "choice": {
+        "best_score": 0.25997334148351375,
+        "best_std": 0.08730741256098573,
+        "best_n_features": 35,
+        "threshold": 0.2502120760122146,
+        "chosen_n_features": 35,
+        "chosen_score": 0.25997334148351375
+      }
+    },
+    {
+      "step": "anova_select_k_best",
+      "selected_n_features": 50
+    }
+  ],
+  "final_shapes": {
+    "X_train_base": [
+      1253,
+      256
+    ],
+    "X_test_base": [
+      314,
+      256
+    ],
+    "X_train_rferf": [
+      1253,
+      123
+    ],
+    "X_test_rferf": [
+      314,
+      123
+    ],
+    "X_train_rfexgb": [
+      1253,
+      35
+    ],
+    "X_test_rfexgb": [
+      314,
+      35
+    ],
+    "X_train_anova": [
+      1253,
+      50
+    ],
+    "X_test_anova": [
+      314,
+      50
+    ]
+  }
+}

@@ -1,0 +1,2 @@
+﻿feature,resolved_train_feature,resolved_monitor_feature,baseline_missing_rate,monitor_missing_rate,n_monitor_rows,n_pchart_alarm,n_gchart_alarm,list_category,list_subtype,export_rank,appeared_in_topn_models,avg_rank,best_rank,avg_mean_positive_shap,max_mean_positive_shap,feature_set,model
+582,582,582,0.0007980845969672786,0.0,314,0,0,main_signal,fp_like,6,10.0,21.8,6.0,0.0924380373969788,0.2775036900903478,"ANOVA,Base,RFERF,RFEXGB","LR,RF,SVM"

@@ -1,0 +1,2 @@
+﻿feature,resolved_train_feature,resolved_monitor_feature,baseline_missing_rate,monitor_missing_rate,n_monitor_rows,n_pchart_alarm,n_gchart_alarm,list_category,list_subtype,export_rank,n_models,mean_tp_missing_rate,mean_fp_missing_rate,mean_tn_missing_rate,mean_missing_tp_tn_gap,mean_missing_tp_fp_gap,overall_missing_rate,dominant_missing_signal_type,has_missing_signal
+115.0,115,115,0.0,0.0,314,0,0,auxiliary_diagnostic,missingness,8,5,0.0,0.0,0.0,0.0,0.0,0.0,weak,0.0

@@ -1,0 +1,8 @@
+missing_rate_greater_than,n_features
+0.0,538
+0.01,103
+0.05,52
+0.1,52
+0.2,32
+0.4,32
+0.5,28

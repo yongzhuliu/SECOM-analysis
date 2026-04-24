@@ -1,0 +1,11 @@
+﻿feature,resolved_train_feature,resolved_monitor_feature,baseline_missing_rate,monitor_missing_rate,n_monitor_rows,n_pchart_alarm,n_gchart_alarm,list_category,list_subtype,export_rank,n_models,direction_consistent_rate,mean_split_validation_score,validation_pass_rate,mean_smd_retention_score,mean_distribution_retention_score,mean_tp_trigger_retention_score,mean_fp_robustness_score,dominant_train_direction,dominant_test_direction
+173,173,173,0.0007980845969672786,0.0,314,0,0,main_signal,split_stable,1,2.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,low,low
+183,183,183,0.0007980845969672786,0.0,314,0,0,main_signal,split_stable,2,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,high,high
+525,525,525,0.014365522745411013,0.01910828025477707,314,0,0,main_signal,split_stable,3,2.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,low,low
+58,58,58,0.0023942537909018356,0.0031847133757961785,314,1,0,main_signal,split_stable,4,2.0,1.0,0.9998127664477474,1.0,1.0,1.0,1.0,0.9981276644774744,high,high
+88,88,88,0.0,0.0,314,0,0,main_signal,split_stable,5,2.0,1.0,0.99875,1.0,1.0,1.0,1.0,0.9875,high,high
+310,310,310,0.0007980845969672786,0.0,314,0,0,main_signal,split_stable,6,1.0,1.0,0.9975903614457832,1.0,1.0,1.0,1.0,0.9759036144578314,high,high
+295,295,295,0.0007980845969672786,0.0031847133757961785,314,1,0,main_signal,split_stable,7,3.0,1.0,0.9957445677840542,1.0,1.0,1.0,1.0,0.9574456778405412,high,high
+298,298,298,0.0007980845969672786,0.0031847133757961785,314,1,0,main_signal,split_stable,8,2.0,1.0,0.9944226468548027,1.0,1.0,1.0,1.0,0.9442264685480272,high,high
+511,511,511,0.0015961691939345571,0.0,314,0,0,main_signal,split_stable,9,1.0,1.0,0.9920930802060732,1.0,0.9931658566028834,0.9752064642214092,1.0,1.0,high,high
+434,434,434,0.0007980845969672786,0.0031847133757961785,314,1,0,main_signal,split_stable,10,2.0,1.0,0.9919264592855336,1.0,1.0,1.0,1.0,0.9192645928553363,high,high

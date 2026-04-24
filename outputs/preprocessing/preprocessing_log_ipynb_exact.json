@@ -1,0 +1,163 @@
+{
+  "input_path": "data\\raw\\uci-secom.csv",
+  "note": "This script follows the original ipynb preprocessing logic as closely as possible.",
+  "steps": [
+    {
+      "step": "train_test_split",
+      "X_train_shape": [
+        1253,
+        591
+      ],
+      "X_test_shape": [
+        314,
+        591
+      ]
+    },
+    {
+      "step": "drop_time",
+      "remaining_features": 590
+    },
+    {
+      "step": "drop_duplicated_features",
+      "n_dropped": 104,
+      "remaining_features": 486
+    },
+    {
+      "step": "drop_features_missing_rate_gt_0_4_based_on_X_train",
+      "n_dropped": 32,
+      "remaining_features": 454
+    },
+    {
+      "step": "add_na_indicators_from_data_raw_missing_rate_gt_0_4",
+      "n_raw_high_missing_features": 32,
+      "n_na_indicators": 6,
+      "remaining_features": 460
+    },
+    {
+      "step": "variance_threshold_zero",
+      "n_dropped": 12,
+      "remaining_features": 448
+    },
+    {
+      "step": "drop_near_constant_columns_tol_0_99",
+      "n_dropped": 6,
+      "remaining_features": 442
+    },
+    {
+      "step": "standardize",
+      "n_scaled_features": 436,
+      "n_na_indicator_features_not_scaled": 6
+    },
+    {
+      "step": "knn_imputation",
+      "X_train_knn_shape": [
+        1253,
+        442
+      ],
+      "X_test_knn_shape": [
+        314,
+        442
+      ]
+    },
+    {
+      "step": "smart_correlated_selection",
+      "n_dropped": 186,
+      "X_train_base_shape": [
+        1253,
+        256
+      ],
+      "X_test_base_shape": [
+        314,
+        256
+      ]
+    },
+    {
+      "step": "rf_rfe",
+      "choice": {
+        "best_idx": 245,
+        "best_score": 0.2867611960065118,
+        "best_std": 0.08036925068554138,
+        "best_n_features": 246,
+        "best_se": 0.03594222156671842,
+        "threshold": 0.2777756406148322,
+        "chosen_n_features": 99,
+        "chosen_score": 0.27907712977098004
+      },
+      "X_train_rferf_shape": [
+        1253,
+        99
+      ],
+      "X_test_rferf_shape": [
+        314,
+        99
+      ]
+    },
+    {
+      "step": "xgb_rfe",
+      "choice": {
+        "best_idx": 199,
+        "best_score": 0.262401153191501,
+        "best_std": 0.07922506212039471,
+        "best_n_features": 200,
+        "best_se": 0.035430524884569235,
+        "threshold": 0.2535435219703587,
+        "chosen_n_features": 112,
+        "chosen_score": 0.25530895585041513
+      },
+      "X_train_rfexgb_shape": [
+        1253,
+        112
+      ],
+      "X_test_rfexgb_shape": [
+        314,
+        112
+      ]
+    },
+    {
+      "step": "anova_select_k_best",
+      "anova_k": 50,
+      "X_train_anova_shape": [
+        1253,
+        50
+      ],
+      "X_test_anova_shape": [
+        314,
+        50
+      ]
+    }
+  ],
+  "final_shapes": {
+    "X_train_base": [
+      1253,
+      256
+    ],
+    "X_test_base": [
+      314,
+      256
+    ],
+    "X_train_rferf": [
+      1253,
+      99
+    ],
+    "X_test_rferf": [
+      314,
+      99
+    ],
+    "X_train_rfexgb": [
+      1253,
+      112
+    ],
+    "X_test_rfexgb": [
+      314,
+      112
+    ],
+    "X_train_anova": [
+      1253,
+      50
+    ],
+    "X_test_anova": [
+      314,
+      50
+    ]
+  }
+}

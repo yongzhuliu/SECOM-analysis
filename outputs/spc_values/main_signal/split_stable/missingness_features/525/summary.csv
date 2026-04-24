@@ -1,0 +1,2 @@
+﻿feature,resolved_train_feature,resolved_monitor_feature,baseline_missing_rate,monitor_missing_rate,n_monitor_rows,n_pchart_alarm,n_gchart_alarm,list_category,list_subtype,export_rank,n_models,direction_consistent_rate,mean_split_validation_score,validation_pass_rate,mean_smd_retention_score,mean_distribution_retention_score,mean_tp_trigger_retention_score,mean_fp_robustness_score,dominant_train_direction,dominant_test_direction
+525,525,525,0.014365522745411013,0.01910828025477707,314,0,0,main_signal,split_stable,3,2.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,low,low

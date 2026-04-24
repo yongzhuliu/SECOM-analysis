@@ -1,0 +1,3 @@
+﻿category,subtype,n_rows_in_list,n_continuous_features_exported,n_missingness_features_exported,n_interaction_pairs_exported,n_unresolved_items,n_multivariate_unresolved_items
+final_deployment,Tier_A,8,8,8,0,0,0
+final_deployment,Tier_B,2,2,2,0,0,0
